@@ -48,6 +48,11 @@
 	<!-- Modernizer Script for old Browsers -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+
 </head>
 
 <body id="body">
@@ -72,11 +77,11 @@
 				<!-- /responsive nav button -->
 
 				<!-- logo -->
-				<a class="navbar-brand" href="#body">
+				<!-- <a class="navbar-brand" href="#body">
 					<h1 id="logo">
 						<img src="img/logo.png" alt="Brandi">
 					</h1>
-				</a>
+				</a> -->
 				<!-- /logo -->
 			</div>
 
@@ -84,10 +89,13 @@
 			<nav class="collapse navbar-collapse navbar-right" role="navigation">
 				<ul id="nav" class="nav navbar-nav">
 					<li class="current"><a href="#body">Home</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#works">Work</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="http://google.com">Contact</a></li>
+					<li><a href="#works">Products</a></li>
+					<li><a href="#dummy">Services</a></li>
+					<li><a href="#team">Partners & Investors</a></li>
+					<li><a href="http://google.com">Contact Us</a></li>
+					<button class="btn btn-success callBtn"> 
+						<a href="http://google.com">Call now <b>EN</b> </a>
+					</button> 
 				</ul>
 			</nav>
 			<!-- /main nav -->
@@ -184,8 +192,7 @@
 		</div>
 	</section>
 
-
-	<!-- SERVICES START -->
+	<!-- PRODUCTS -->
 
 	<!--
         Our Works
@@ -196,7 +203,7 @@
 			<div class="row">
 
 				<div class="sec-title text-center">
-					<h2>Servises</h2>
+					<h2>Products</h2>
 					<div class="devider"></div>
 				</div>
 
@@ -296,19 +303,19 @@
 
 
 	</section>
+	<!-- PRODUCTS ENDS -->
 
 	<!--
 			End Our Works
 			==================================== -->
-	<!-- SERVISES ENDS-->
 
-
-	<!-- PRODUCTS -->
+	<!-- SERVICES START -->
 	<div class="sec-title text-center">
-		<h2>Products</h2>
+		<div id="dummy" style="width: 10px; height: 15px; margin-top:120px;"></div>
+		<h2>Services</h2>
 		<div class="devider"></div>
 	</div>
-	<div class="variable slider" id="slick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+	<div class="gallery gallery-responsive portfolio_slider slider" id="slick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
 
 
 		<div class="product">
@@ -343,8 +350,8 @@
 		</div>
 	</div>
 
-
-	<!-- PRODUCTS ENDS -->
+	<!-- SERVISES ENDS-->
+	
 
 
 
@@ -409,63 +416,73 @@
 
 	<!-- PARTNBERS&INVESTERS END-->
 	<footer id="footer" class="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-					<div class="footer-single">
-						<img src="img/footer-logo.png" alt="">
-						<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="container">
+				<div class="row">
+	
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<img src="img/footer-logo_black.png" alt="">
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+	
+					<!-- <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single">
+							<h6>Subscribe </h6>
+							<form action="#" class="subscribe">
+								<input type="text" name="subscribe" id="subscribe">
+								<input type="submit" value="&#8594;" id="subs">
+							</form>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</div>
+					</div> -->
+	
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="footer-single">
+							<h4 style="font-weight: bold; font-size: 18px; margin-bottom: 15px">Navigation</h4>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Servises</a></li>
+								<li><a href="#">Partners&Investors</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+	
+					 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h3 style="font-weight: bolder; font-size: 34px">347 567 78 90</h3>
+							<h5 >AVAILABLE FROM 12PM - 18PM</h5>
+							<h6 style="font-weight: bold; margin-top: 25px; font-size: 18px">Switzerland</h6>
+							<p style="margin-top: -5px">Weinreben 3</p>
+							<p >CH-6300 Zug</p>
+							
+	
+						</div>
+					</div> 
+	
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h4 style="font-weight: bold; font-size: 18px; margin-bottom: 15px">Info</h4>
+							<p>
+								eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco laboris nisi ut aliquip ex ea commodo consequat
+							</p>
+						</div>
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center" style="color: black">
+							Copyright © 2018 <a href="http://themefisher.com/">BESStec AG</a>. All rights reserved. Designed & developed by Marko Sibinovic
+							
+						</p>
 					</div>
 				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-					<div class="footer-single">
-						<h6>Subscribe </h6>
-						<form action="#" class="subscribe">
-							<input type="text" name="subscribe" id="subscribe">
-							<input type="submit" value="&#8594;" id="subs">
-						</form>
-						<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-					<div class="footer-single">
-						<h6>Explore</h6>
-						<ul>
-							<li><a href="#">Inside Us</a></li>
-							<li><a href="#">Flickr</a></li>
-							<li><a href="#">Google</a></li>
-							<li><a href="#">Forum</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-					<div class="footer-single">
-						<h6>Support</h6>
-						<ul>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Market Blog</a></li>
-							<li><a href="#">Help Center</a></li>
-							<li><a href="#">Pressroom</a></li>
-						</ul>
-					</div>
-				</div>
-
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p class="copyright text-center">
-						Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by
-						<a href="http://themefisher.com/">Themefisher</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 
 	<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 
@@ -617,82 +634,42 @@
 	<script src="slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
 
-			$("#slick").slick({
-
-				// normal options...
-				dots: true,
-				arrows: true,
-
-				// the magic
-				responsive: [{
-
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 2,
-						infinite: true,
-						arrows: true,
+			$('.gallery-responsive').slick({
+				dots: false,
+				infinite: true,
+				arrow: true,
+				speed: 300,
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: false
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
 					}
-
-				}, {
-
-					breakpoint: 600,
-					settings: {
-						slidesToShow: 1,
-						dots: true,
-						arrows: true,
-					}
-
-				}, {
-
-					breakpoint: 300,
-					settings: "unslick"// destroys slick
-
-				}]
-			});
-
-
-
-			// $(".variable").slick({
-			// 	dots: true,
-			// 	infinite: true,
-			// 	slidesToShow: 3,
-			// 	variableWidth: false,
-			// 	arrows: true,
-
-
-			// 	// the magic
-			// 	responsive: [{
-
-			// 		breakpoint: 1024,
-			// 		settings: {
-			// 			slidesToShow: 3,
-			// 			infinite: true,
-			// 			arrows: true,
-			// 		}
-
-			// 	}, {
-
-			// 		breakpoint: 600,
-			// 		settings: {
-			// 			slidesToShow: 2,
-			// 			dots: true,
-			// 			arrows: true,
-			// 		}
-
-			// 	}, {
-
-			// 		breakpoint: 300,
-			// 		settings: {
-			// 			slidesToShow: 1,
-			// 			dots: true,
-			// 			arrows: true,
-			// 		}
-			// 		// settings: "unslick" // destroys slick
-
-			// 	}]
-			// });
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+				]
 		});
 	</script>
 </body>

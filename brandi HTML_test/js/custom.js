@@ -31,10 +31,10 @@ $(document).ready(function(){
 	});
 	
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
-            $("#navigation").css("background-color","#0EB493");
+        if ($(window).scrollTop() > 500) {
+            $("#navigation").css("background-color","rgba(221,221,221,0.8)");
         } else {
-            $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
+            $("#navigation").css("background-color","rgba(221,221,221,1)");
         }
     });
 	
@@ -118,34 +118,34 @@ $(document).ready(function(){
 
 
 // ==========  START GOOGLE MAP ========== //
-// function initialize() {
-//     var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+function initialize() {
+    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
 
-//     var mapOptions = {
-//         zoom: 14,
-//         center: myLatLng,
-//         disableDefaultUI: true,
-//         scrollwheel: false,
-//         navigationControl: false,
-//         mapTypeControl: false,
-//         scaleControl: false,
-//         draggable: false,
-//         mapTypeControlOptions: {
-//             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
-//         }
-//     };
+    var mapOptions = {
+        zoom: 14,
+        center: myLatLng,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: false,
+        mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
+        }
+    };
 
-//     var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
 
-//     var marker = new google.maps.Marker({
-//         position: myLatLng,
-//         map: map,
-//         icon: 'img/location-icon.png',
-//         title: '',
-//     });
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: 'img/location-icon.png',
+        title: '',
+    });
 
-// }
+}
 
-// google.maps.event.addDomListener(window, "load", initialize);
+google.maps.event.addDomListener(window, "load", initialize);
 // ========== END GOOGLE MAP ========== //
